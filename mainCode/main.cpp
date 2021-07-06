@@ -303,6 +303,6 @@ void lexerAritmetico(string txtFileName){
 }
 
 int main(int argc, const char * argv[]) {
-    lexerAritmetico("lex2.txt");
+    lexerAritmetico("lex.txt");
     return 0;
 }
