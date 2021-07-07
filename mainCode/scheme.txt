@@ -1,0 +1,30 @@
+;Here are some examples of Scheme's tokens: 
+
+	;An example of a mathematical operation:
+		3(9-2) + 8.5 ;Parentheses are special characters.
+	
+	
+	;Variable declaration:
+		speedOfLightMPS = 3 * 10^8 ;'=' is considered an operator.
+		speed_Of_Light_KM_P_S = 1.079e9 ;A variable can have underscores (except in the first character).
+		num = -2E4 ;'E' is also valid for exponential notation.
+
+		;There are also boolean (logical) values:
+			boolean1 = #t
+			boolean2 = #f
+		
+	;Function syntax:
+		define someFunction(someParameter) ;'define' is a reserved word.
+
+	;Symbols:
+		'someSymbol
+		'3*8.5+4 ;After an apostrophe, the rest of the line is considered a symbol (except in the presence of a comment).
+		'someSymbolAgain ;"this is a comment".
+
+	;Errors:
+	
+		_var ;Underscore in first character.
+		7e4.3 ;Exponential notation can't have decimal numbers as powers.
+		abcdπfg ;In the presence of an invalid character (π), the whole string is tokenized as an error, except for a particular case…
+		abcd≠10*32-0.4 ;Whenever there are operators within the string, it is split into substrings delimited by these operators.
+		
