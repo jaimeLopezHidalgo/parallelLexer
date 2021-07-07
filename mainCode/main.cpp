@@ -273,11 +273,7 @@ void loadTable(string tablefileName, string txtFileName){
     }
 }
 
-void lexerAritmetico(string txtFileName){
-    loadTable("stateTable.csv", txtFileName);
-}
-
 int main(int argc, const char * argv[]) {
-    lexerAritmetico("scheme.txt");
+    loadTable("stateTable.csv", "scheme.txt");
     return 0;
 }
